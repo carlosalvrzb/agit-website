@@ -1,0 +1,11 @@
+{
+  "name": "agit-website",
+  "version": "1.0.0",
+  "description": "Sitio web de Agit — Agencia de Marketing Digital",
+  "scripts": {
+    "start": "serve . -l $PORT"
+  },
+  "dependencies": {
+    "serve": "^14.2.4"
+  }
+}
