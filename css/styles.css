@@ -2365,3 +2365,477 @@ input {
     padding: 0.75rem 1rem;
   }
 }
+
+/* ============================================================
+   PÁGINA — CONTACTO
+   ============================================================ */
+
+/* Badge variante para fondo oscuro */
+.badge--light {
+  background: rgba(255, 255, 255, 0.12);
+  color: var(--neutral-100);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Botón WhatsApp */
+.btn--wa {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background: #25D366;
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.9375rem;
+  border-radius: var(--border-radius-pill);
+  border: none;
+  cursor: pointer;
+  transition: background var(--transition), transform var(--transition), box-shadow var(--transition);
+  box-shadow: 0 8px 24px rgba(37, 211, 102, 0.3);
+  text-decoration: none;
+}
+.btn--wa:hover {
+  background: #1ebe5a;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 32px rgba(37, 211, 102, 0.4);
+}
+
+/* Botón blanco con borde para fondo oscuro */
+.btn--white {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background: transparent;
+  color: var(--neutral-100);
+  font-weight: 700;
+  font-size: 0.9375rem;
+  border-radius: var(--border-radius-pill);
+  border: 2px solid rgba(255,255,255,0.5);
+  cursor: pointer;
+  transition: background var(--transition), border-color var(--transition);
+  text-decoration: none;
+}
+.btn--white:hover {
+  background: rgba(255,255,255,0.1);
+  border-color: rgba(255,255,255,0.8);
+}
+
+/* ── Hero ───────────────────────────────────────────────────── */
+.contacto-hero {
+  background: var(--neutral-800);
+  padding-block: 5.5rem 5rem;
+  position: relative;
+  overflow: hidden;
+}
+.contacto-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 80% 50%, rgba(255,57,81,0.12) 0%, transparent 60%),
+              radial-gradient(ellipse at 20% 80%, rgba(106,53,255,0.10) 0%, transparent 55%);
+  pointer-events: none;
+}
+
+.contacto-hero__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  position: relative;
+}
+
+.contacto-hero__text .badge {
+  margin-bottom: 1.25rem;
+}
+
+.contacto-hero__title {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+  color: var(--neutral-100);
+  line-height: 1.15;
+  margin-bottom: 1.25rem;
+}
+
+.contacto-hero__desc {
+  font-size: 1.0625rem;
+  color: rgba(255,255,255,0.65);
+  line-height: 1.75;
+  margin-bottom: 2rem;
+  max-width: 480px;
+}
+
+.contacto-hero__btns {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* Cards de métodos de contacto */
+.contacto-hero__methods {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contacto-method-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: var(--border-radius-card);
+  padding: 1.25rem 1.5rem;
+  transition: background var(--transition), transform var(--transition);
+  backdrop-filter: blur(4px);
+}
+.contacto-method-card:hover {
+  background: rgba(255,255,255,0.1);
+  transform: translateX(4px);
+}
+.contacto-method-card--wa {
+  border-color: rgba(37, 211, 102, 0.3);
+}
+.contacto-method-card--email {
+  border-color: rgba(255, 57, 81, 0.3);
+}
+
+.contacto-method-card__icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.contacto-method-card__title {
+  font-size: 0.9375rem;
+  font-weight: 700;
+  color: var(--neutral-100);
+  margin-bottom: 0.2rem;
+}
+.contacto-method-card__desc {
+  font-size: 0.8125rem;
+  color: rgba(255,255,255,0.5);
+}
+
+/* ── Stats strip ─────────────────────────────────────────────── */
+.contacto-stats {
+  background: var(--neutral-200);
+  padding-block: 2.5rem;
+  border-bottom: 1px solid var(--neutral-300);
+}
+
+.contacto-stats__inner {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  text-align: center;
+}
+
+.contacto-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.contacto-stat__value {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 800;
+  color: var(--primary-1);
+  line-height: 1.1;
+}
+
+.contacto-stat__label {
+  font-size: 0.8125rem;
+  color: var(--neutral-600);
+  font-weight: 500;
+}
+
+/* ── Sección principal (formulario + info) ───────────────────── */
+.contacto-main {
+  padding-block: 5rem;
+  background: var(--neutral-100);
+}
+
+.contacto-main__inner {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.contacto-main__form-title {
+  font-size: clamp(1.375rem, 2.5vw, 1.875rem);
+  font-weight: 800;
+  color: var(--neutral-800);
+  margin-bottom: 0.5rem;
+}
+
+.contacto-main__form-desc {
+  font-size: 0.9375rem;
+  color: var(--neutral-600);
+  line-height: 1.65;
+  margin-bottom: 1.75rem;
+}
+
+/* Variante standalone del formulario (fondo blanco, no gris) */
+.contact-form--standalone {
+  background: var(--neutral-200);
+}
+
+/* ── Panel info lateral ──────────────────────────────────────── */
+.contacto-main__info {
+  position: sticky;
+  top: 6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.contacto-main__info-title {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--neutral-800);
+}
+
+.contacto-main__info-desc {
+  font-size: 0.9rem;
+  color: var(--neutral-600);
+  line-height: 1.65;
+  margin-top: -0.5rem;
+}
+
+/* Canales de contacto (tarjetas clickeables) */
+.contacto-channel {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.125rem 1.25rem;
+  border-radius: var(--border-radius-card);
+  text-decoration: none;
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+.contacto-channel:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-card);
+}
+
+.contacto-channel--wa {
+  background: #25D366;
+  color: #fff;
+}
+.contacto-channel--email {
+  background: var(--primary-1);
+  color: #fff;
+}
+
+.contacto-channel__icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.contacto-channel__body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.contacto-channel__label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  opacity: 0.8;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.contacto-channel__value {
+  font-size: 0.9375rem;
+  font-weight: 700;
+}
+
+.contacto-channel__arrow {
+  opacity: 0.7;
+  flex-shrink: 0;
+}
+
+/* Redes sociales */
+.contacto-social__title {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--neutral-600);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.625rem;
+}
+
+.contacto-social__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.625rem;
+}
+
+.contacto-social__item {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  padding: 0.75rem 1rem;
+  border-radius: 12px;
+  color: #fff;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform var(--transition), opacity var(--transition);
+}
+.contacto-social__item:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+/* Promesa de respuesta */
+.contacto-promise {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  padding: 0.875rem 1.125rem;
+  background: rgba(255, 57, 81, 0.06);
+  border: 1px solid rgba(255, 57, 81, 0.15);
+  border-radius: 12px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--neutral-700);
+}
+
+/* ── WhatsApp CTA section ────────────────────────────────────── */
+.contacto-wa-cta {
+  background: linear-gradient(135deg, #1eb854 0%, #25D366 50%, #128c3e 100%);
+  padding-block: 4rem;
+}
+
+.contacto-wa-cta__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.contacto-wa-cta__eyebrow {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: rgba(255,255,255,0.75);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 0.5rem;
+}
+
+.contacto-wa-cta__title {
+  font-size: clamp(1.5rem, 3vw, 2.25rem);
+  font-weight: 800;
+  color: #fff;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+}
+
+.contacto-wa-cta__desc {
+  font-size: 1rem;
+  color: rgba(255,255,255,0.75);
+  line-height: 1.6;
+}
+
+.contacto-wa-cta__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.625rem;
+  padding: 1rem 2rem;
+  background: #fff;
+  color: #128c3e;
+  font-size: 1rem;
+  font-weight: 800;
+  border-radius: var(--border-radius-pill);
+  text-decoration: none;
+  flex-shrink: 0;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+.contacto-wa-cta__btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 48px rgba(0,0,0,0.2);
+}
+.contacto-wa-cta__btn svg path {
+  fill: #128c3e;
+}
+
+/* ── Responsive — Contacto (≤ 1024px) ───────────────────────── */
+@media (max-width: 1024px) {
+  .contacto-hero__inner {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .contacto-hero__methods {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .contacto-method-card {
+    flex: 1 1 200px;
+  }
+
+  .contacto-stats__inner {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .contacto-main__inner {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .contacto-main__info {
+    position: static;
+  }
+
+  .contacto-wa-cta__inner {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* ── Responsive — Contacto (≤ 640px) ────────────────────────── */
+@media (max-width: 640px) {
+  .contacto-hero {
+    padding-block: 4rem 3.5rem;
+  }
+
+  .contacto-hero__btns {
+    flex-direction: column;
+  }
+  .btn--white,
+  .btn--wa {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .contacto-hero__methods {
+    flex-direction: column;
+  }
+
+  .contacto-stats__inner {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .contacto-social__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
