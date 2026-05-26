@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Conoce los servicios de Agit: Email Marketing, Anuncios Pagados y Desarrollo Web. Estrategias digitales para hacer crecer tu empresa.">
-  <title>Servicios | Agit — Agencia de Marketing Digital</title>
+  <meta name="description" content="Gracias por contactarnos. Nuestro equipo te responderá en menos de 24 horas.">
+  <title>¡Gracias! | Agit — Agencia de Marketing Digital</title>
+  <meta name="robots" content="noindex, nofollow">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,7 +13,6 @@
 
   <link rel="stylesheet" href="../css/styles.css">
   <link rel="icon" href="../assets/images/logo-agit.svg" type="image/svg+xml">
-  <link rel="canonical" href="https://www.agit.com.mx/servicios">
 </head>
 <body>
 
@@ -30,7 +30,7 @@
         <nav class="navbar__nav" id="navMenu" aria-label="Navegación principal">
           <a href="../index.html" class="navbar__link">Inicio</a>
           <a href="nosotros.html" class="navbar__link">Nosotros</a>
-          <a href="servicios.html" class="navbar__link" aria-current="page">Servicios</a>
+          <a href="servicios.html" class="navbar__link">Servicios</a>
           <a href="desarrollo-web.html" class="navbar__link">Desarrollo Web</a>
         </nav>
 
@@ -50,107 +50,64 @@
 
   <main>
 
-    <!-- ══════════════════════════════════════════
-         HERO
-    ══════════════════════════════════════════ -->
-    <section class="servicios-hero" aria-labelledby="servicios-title">
+    <section class="gracias-section" aria-labelledby="gracias-title">
       <div class="container">
-        <div class="servicios-hero__inner">
+        <div class="gracias__inner">
 
-          <div class="servicios-hero__text">
-            <div class="badge">Nuestros Servicios</div>
-            <h1 class="servicios-hero__title" id="servicios-title">
-              Servicios de Alto Impacto
-            </h1>
+          <!-- Ícono de check animado -->
+          <div class="gracias__check" aria-hidden="true">
+            <svg class="gracias__check-svg" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="40" cy="40" r="38" stroke="#ff3951" stroke-width="3" class="gracias__circle"/>
+              <path d="M22 40l13 13 23-26" stroke="#ff3951" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="gracias__checkmark"/>
+            </svg>
           </div>
 
-          <p class="servicios-hero__desc">
-            Las herramientas digitales te permiten alcanzar una mayor audiencia, sin perder la segmentación y midiendo todo.
+          <div class="badge" style="margin-bottom:1rem;">Mensaje recibido</div>
+
+          <h1 class="gracias__title" id="gracias-title">
+            ¡Gracias por escribirnos!
+          </h1>
+
+          <p class="gracias__desc">
+            Tu mensaje está en manos de nuestro equipo. Te contactaremos en menos de <strong>24 horas hábiles</strong> con una propuesta personalizada para tu negocio.
           </p>
 
-        </div>
-      </div>
-    </section>
-
-    <!-- ══════════════════════════════════════════
-         CARDS DE SERVICIOS
-    ══════════════════════════════════════════ -->
-    <section class="servicios-list" aria-label="Lista de servicios">
-      <div class="container">
-        <div class="servicios-list__grid">
-
-          <!-- Email Marketing -->
-          <div class="servicio-h-card">
-            <div class="servicio-h-card__icon" style="background:rgba(255,57,81,0.1);">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <rect x="2" y="4" width="20" height="16" rx="3" fill="#ff3951"/>
-                <path d="M2 8l10 6 10-6" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
-              </svg>
+          <!-- Qué sigue -->
+          <div class="gracias__steps">
+            <div class="gracias__step">
+              <div class="gracias__step-num">01</div>
+              <div>
+                <p class="gracias__step-title">Revisamos tu caso</p>
+                <p class="gracias__step-desc">Un estratega analiza tu proyecto y tus objetivos de negocio.</p>
+              </div>
             </div>
-            <div class="servicio-h-card__body">
-              <h2 class="servicio-h-card__title">Email Marketing</h2>
-              <p class="servicio-h-card__desc">
-                Automatizar y vender con emails es fácil y posible. Con el aliado correcto.
-              </p>
-              <a href="servicio-email.html" class="servicio-h-card__link">Conocer Más &rarr;</a>
+            <div class="gracias__step">
+              <div class="gracias__step-num">02</div>
+              <div>
+                <p class="gracias__step-title">Te contactamos</p>
+                <p class="gracias__step-desc">Te respondemos por email o WhatsApp con un plan concreto para ti.</p>
+              </div>
+            </div>
+            <div class="gracias__step">
+              <div class="gracias__step-num">03</div>
+              <div>
+                <p class="gracias__step-title">Empezamos a crecer</p>
+                <p class="gracias__step-desc">Arrancamos tu estrategia digital y medimos resultados desde el día uno.</p>
+              </div>
             </div>
           </div>
 
-          <!-- Anuncios Pagados -->
-          <div class="servicio-h-card">
-            <div class="servicio-h-card__icon" style="background:rgba(63,128,253,0.1);">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <rect x="3" y="3" width="18" height="18" rx="4" fill="#3f80fd"/>
-                <rect x="7" y="13" width="2" height="4" rx="1" fill="white"/>
-                <rect x="11" y="10" width="2" height="7" rx="1" fill="white"/>
-                <rect x="15" y="7" width="2" height="10" rx="1" fill="white"/>
-              </svg>
-            </div>
-            <div class="servicio-h-card__body">
-              <h2 class="servicio-h-card__title">Anuncios Pagados</h2>
-              <p class="servicio-h-card__desc">
-                Anúnciate donde realmente pasa el tiempo tu mercado meta.
-              </p>
-              <a href="servicio-anuncios.html" class="servicio-h-card__link">Conocer Más &rarr;</a>
-            </div>
+          <!-- CTAs -->
+          <div class="gracias__actions">
+            <a href="../index.html" class="btn btn--outline">
+              &larr; Volver al inicio
+            </a>
+            <a href="https://api.whatsapp.com/send?phone=525551448805&text=%C2%A1Hola!%20acabo%20de%20llenar%20el%20formulario%20de%20su%20sitio%20web%20y%20quisiera%20hablar%20con%20alguien." class="btn btn--primary" target="_blank" rel="noopener">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg>
+              Hablar por WhatsApp ahora
+            </a>
           </div>
 
-          <!-- Desarrollo Web -->
-          <div class="servicio-h-card">
-            <div class="servicio-h-card__icon" style="background:rgba(106,53,255,0.1);">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <rect x="2" y="3" width="20" height="16" rx="3" fill="#6a35ff"/>
-                <path d="M8 10l-3 3 3 3M16 10l3 3-3 3" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M13 8l-2 8" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
-                <rect x="7" y="20" width="10" height="1.5" rx="0.75" fill="#6a35ff"/>
-                <rect x="10" y="19" width="4" height="2" rx="0.5" fill="#6a35ff"/>
-              </svg>
-            </div>
-            <div class="servicio-h-card__body">
-              <h2 class="servicio-h-card__title">Desarrollo Web</h2>
-              <p class="servicio-h-card__desc">
-                Construimos tu presencia digital con sitios web modernos, rápidos y optimizados para convertir visitas en clientes.
-              </p>
-              <a href="desarrollo-web.html" class="servicio-h-card__link">Conocer Más &rarr;</a>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- ══════════════════════════════════════════
-         CTA BANNER
-    ══════════════════════════════════════════ -->
-    <section class="cta-banner" aria-labelledby="cta-banner-title">
-      <div class="container">
-        <div class="cta-banner__inner">
-          <p class="cta-banner__text" id="cta-banner-title">
-            ¿List@ para crecer tu empresa? ¡Contáctanos hoy!
-          </p>
-          <a href="contacto.html" class="cta-banner__btn">
-            Contactar &rarr;
-          </a>
         </div>
       </div>
     </section>
@@ -173,17 +130,10 @@
         <div>
           <p class="footer__newsletter-title">Obtén una consulta gratis sobre tu marketing</p>
           <form class="footer__form" action="https://formspree.io/f/mvzywbjr" method="post" novalidate>
-            <input type="hidden" name="_subject" value="Consulta gratis — Servicios">
+            <input type="hidden" name="_subject" value="Consulta gratis — Gracias">
             <input type="hidden" name="_next" value="https://www.agit.com.mx/pages/gracias.html">
             <label for="footerEmail" class="sr-only">Tu correo electrónico</label>
-            <input
-              class="footer__input"
-              type="email"
-              id="footerEmail"
-              name="email"
-              placeholder="Escribe tu email"
-              autocomplete="email"
-            >
+            <input class="footer__input" type="email" id="footerEmail" name="email" placeholder="Escribe tu email" autocomplete="email">
             <button type="submit" class="btn btn--primary" style="border-radius:var(--border-radius-pill);padding:0.6rem 1.25rem;font-size:0.875rem;">
               Lo quiero &rarr;
             </button>
@@ -192,7 +142,6 @@
       </div>
 
       <nav class="footer__nav" aria-label="Navegación del footer">
-
         <div class="footer__nav-col">
           <h4>Páginas</h4>
           <ul class="footer__nav-list">
@@ -201,7 +150,6 @@
             <li><a href="contacto.html">Contacto</a></li>
           </ul>
         </div>
-
         <div class="footer__nav-col">
           <h4>&nbsp;</h4>
           <ul class="footer__nav-list">
@@ -209,14 +157,12 @@
             <li><a href="servicios.html">Servicios</a></li>
           </ul>
         </div>
-
         <div class="footer__nav-col">
           <h4>&nbsp;</h4>
           <ul class="footer__nav-list">
             <li><a href="casos-de-estudio.html">Casos de Estudio</a></li>
           </ul>
         </div>
-
         <div class="footer__nav-col">
           <h4>Síguenos</h4>
           <div class="footer__social">
@@ -237,7 +183,6 @@
             </a>
           </div>
         </div>
-
       </nav>
 
       <div class="footer__bottom">
@@ -250,7 +195,112 @@
     </div>
   </footer>
 
-  <style>.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}</style>
+  <style>
+    .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+
+    /* ── Gracias page styles ── */
+    .gracias-section {
+      padding-block: 5rem;
+      min-height: calc(100vh - 72px);
+      display: flex;
+      align-items: center;
+    }
+    .gracias__inner {
+      max-width: 680px;
+      margin-inline: auto;
+      text-align: center;
+    }
+    .gracias__check {
+      width: 80px;
+      height: 80px;
+      margin: 0 auto 2rem;
+    }
+    .gracias__check-svg {
+      width: 100%;
+      height: 100%;
+    }
+    .gracias__circle {
+      stroke-dasharray: 240;
+      stroke-dashoffset: 240;
+      animation: draw-circle 0.6s ease forwards;
+    }
+    .gracias__checkmark {
+      stroke-dasharray: 60;
+      stroke-dashoffset: 60;
+      animation: draw-check 0.4s ease 0.5s forwards;
+    }
+    @keyframes draw-circle {
+      to { stroke-dashoffset: 0; }
+    }
+    @keyframes draw-check {
+      to { stroke-dashoffset: 0; }
+    }
+    .gracias__title {
+      font-size: clamp(2rem, 4vw, 2.75rem);
+      font-weight: 800;
+      color: var(--neutral-800);
+      line-height: 1.2;
+      margin-bottom: 1rem;
+    }
+    .gracias__desc {
+      font-size: 1.0625rem;
+      color: var(--neutral-600);
+      line-height: 1.75;
+      margin-bottom: 2.5rem;
+    }
+    .gracias__steps {
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+      text-align: left;
+      background: var(--neutral-200);
+      border-radius: var(--border-radius-card);
+      padding: 2rem;
+      margin-bottom: 2.5rem;
+    }
+    .gracias__step {
+      display: flex;
+      align-items: flex-start;
+      gap: 1.25rem;
+    }
+    .gracias__step-num {
+      font-size: 0.8125rem;
+      font-weight: 800;
+      color: var(--primary-1);
+      background: rgba(255,57,81,0.08);
+      border-radius: 8px;
+      padding: 0.375rem 0.625rem;
+      flex-shrink: 0;
+      letter-spacing: 0.02em;
+    }
+    .gracias__step-title {
+      font-size: 0.9375rem;
+      font-weight: 700;
+      color: var(--neutral-800);
+      margin-bottom: 0.2rem;
+    }
+    .gracias__step-desc {
+      font-size: 0.875rem;
+      color: var(--neutral-600);
+      line-height: 1.6;
+    }
+    .gracias__actions {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .gracias__actions .btn--primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    @media (max-width: 640px) {
+      .gracias__actions {
+        flex-direction: column;
+      }
+    }
+  </style>
 
   <script src="../js/main.js"></script>
 
